@@ -1,0 +1,11 @@
+server:
+  port: 8763
+eureka:
+  instance:
+    prefer-ip-address: true #显示服务ip
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #指定Eureka服务端地址
+spring:
+  application:
+    name: microservice-order
